@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nam_o.walkietalkie.UserSelection"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/audioBtn"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/ic_mic_black_128dp"
+        app:cb_color="#6cecce"
+        app:cb_pressedRingWidth="16dp"
+        tools:layout_conversion_absoluteX="77dp"
+        tools:layout_conversion_absoluteY="173dp"
+        tools:layout_conversion_absoluteWidth="256dp"
+        tools:layout_conversion_absoluteHeight="256dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        tools:layout_conversion_absoluteX="145dp"
+        tools:layout_conversion_absoluteY="22dp"
+        tools:layout_conversion_absoluteWidth="120dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/listen"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/disconnect"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="LISTEN"
+        tools:layout_conversion_absoluteX="8dp"
+        tools:layout_conversion_absoluteY="22dp"
+        tools:layout_conversion_absoluteWidth="120dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="DISCONNECT"
+        tools:layout_conversion_absoluteX="282dp"
+        tools:layout_conversion_absoluteY="22dp"
+        tools:layout_conversion_absoluteWidth="120dp"
+        tools:layout_conversion_absoluteHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="360dp"
+        android:layout_height="440dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="511dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="91dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
